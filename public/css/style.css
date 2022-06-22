@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.secFlex {
+  margin: 15% 40% 20% 40%;
+  
+    text-align: center;
+    
+  display: flex;
+  padding: 5px;
+  
+  flex-direction: column;
+  background-color: rgb(16, 219, 219);
+}
+
+a{
+  height: 2rem;
+  margin: 5px; 
+}
+
+.btnInit {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  
+}
+ 
+
+header#flavor{
+  background-color: aqua;
+  display:flex;
+  justify-items: center;
+  justify-content: space-between;
+  
+  padding: 0;
+  height: 50px;
+  
+}
+
+#imgEscola {
+  width: fit-content;
+  padding: 0;
+  margin: 0;
+
+}
+
+header#flavor section#stats{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: blueviolet;
+  
+  
+}
+
+header#flavor section#stats h3{
+  background-color: rgb(80, 80, 218);
+  padding: 1rem;
+  margin: 0;
+}
+
+#btnMenu{
+  padding: 1%;
+  
+  cursor: pointer;
+}
+
+section#mapaPrincipal{
+  background-color: rgb(49, 231, 104);
+  
+
+}
+
+footer{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  
+  background-color: brown;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#linhaDoTempo{
+  display: flex;
+  
+  width: 90%;
+  background-color: aqua;
+  margin: 0;
+}
+
+#timeSelect{
+  width: 10%;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+
+.btnTime{
+  width:33%;
+  cursor: pointer;
+}
+
+#div1{
+  
+  background-color: bisque;
+  margin: 0 1px 0 1px
+
+}
