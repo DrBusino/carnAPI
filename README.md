@@ -1,10 +1,12 @@
 # Carnavalizando
 
 
+
+
 ## 1.0.0 
 
 Concept inicial.
-Estruturação de paginas e porta.
+Estruturação de páginas e porta.
 
 
 ## 1.0.1 
