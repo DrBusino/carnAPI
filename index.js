@@ -1,33 +1,25 @@
 const express = require('express');
-const { get } = require('lodash');
+const cors = require('cors');
+const routeJurado = require('./src/routes/jurado.route');
 
+const routeEscola = require('./src/routes/escola.route');
+const connectToDatabase = require('./src/database/database')
+
+const port = 3000;
 const app = express();
 
-const path = require('path');
-
-let port = 5000;
-
-app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, "public")));
-app.use(express.urlencoded());
+connectToDatabase();
 
 
-app.get("/", (req, res)=>{
-    res.render('index');
+app.use(express.json());
+app.use(cors());
+
+
+app.use('/carnavalizando', routeJurado);
+app.use('/carnavalizando', routeEscola);
+
+
+
+app.listen(port, () => {
+  console.log(`http://localhost:${port}/carnavalizando`);
 });
-
-app.get("/novoJogo", (req,res)=>{
-    res.render('novoJogo');
-});
-
-app.get("/cenarios", (req,res)=>{
-    res.render('cenarios');
-});
-
-app.get("/game", (req,res)=>{
-    res.render('game');
-});
-
-
-app.listen(port)
-console.log(`http://localhost:${port}`);
