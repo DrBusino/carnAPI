@@ -1,15 +1,11 @@
-# Carnavalizando
+# CarnaAPI
 
 
 
 
 ## 1.0.0 
 
-### Concept inicial.
-### Estruturação de páginas e porta.
+### Implementação REST e Banco de dados.
 
+####  Model - Jurados gerados.
 
-## 1.0.1 
-
-### Modificação drástica no portrait.
-### estruturação da linha do tempo.
